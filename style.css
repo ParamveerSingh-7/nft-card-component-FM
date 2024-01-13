@@ -2,10 +2,11 @@
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: hsl(217, 54%, 11%);
-  padding-top: 5rem;
+  height: 100vh;
 }
 * {
   margin: 0;
@@ -29,10 +30,13 @@ body {
   background-image: url(./images/image-equilibrium.jpg);
   background-size: cover;
   border-radius: 1rem;
-  z-index: 1;
+  z-index: 2;
+}
+.imageContainer:hover {
+  z-index: 0;
 }
 .active-image {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 20rem;
@@ -43,6 +47,9 @@ body {
   z-index: 1;
   top: 1.2rem;
   position: absolute;
+}
+.active-image:hover {
+  z-index: 2;
 }
 .active-image,
 .imageContainer:hover {
@@ -65,6 +72,7 @@ body {
 }
 .switcher:hover {
   cursor: pointer;
+  color: hsl(178, 100%, 50%);
 }
 .content {
   color: hsl(215, 32%, 27%);
@@ -116,4 +124,5 @@ body {
 }
 .info-txt:hover {
   cursor: pointer;
+  color: hsl(178, 100%, 50%);
 }
