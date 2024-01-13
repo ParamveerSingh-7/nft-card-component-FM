@@ -75,7 +75,7 @@ body {
   color: hsl(178, 100%, 50%);
 }
 .content {
-  color: hsl(215, 32%, 27%);
+  color: hsl(215, 51%, 70%);
   font-size: 18px;
 }
 .cost-time {
@@ -113,7 +113,7 @@ body {
   height: 2rem;
 }
 .info {
-  color: hsl(215, 32%, 27%);
+  color: hsl(215, 51%, 70%);
 }
 .info-txt {
   text-decoration: none;
